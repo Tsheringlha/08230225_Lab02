@@ -1,0 +1,239 @@
+/* =============================
+   General Styles
+============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #db9e9e;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  color: #222;
+}
+
+/* =============================
+   Navigation Bar
+============================= */
+header {
+  background-color: #a8cad8;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar li a {
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar li a:hover {
+  background-color: rgb(114, 199, 140);
+  color: #4CAF50;
+  border-radius: 5px;
+}
+
+/* =============================
+   Hero Section (Home)
+============================= */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: #99db9f;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4CAF50;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #4CAF50;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.tagline {
+  font-style: italic;
+  color: #555;
+}
+
+/* =============================
+   Sections (About, Education, Skills, Projects, Contact)
+============================= */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #c969b4;
+}
+
+/* About Page */
+.about-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #b690a3;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1rem;
+}
+
+/* Skills Page */
+.skills-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-grid div {
+  flex: 1;
+  min-width: 200px;
+  background-color: #7297b6;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.skills-grid h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.skills-grid ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Projects Page */
+.project {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.project-img {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* Contact Page */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #52c59f;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px;
+  background-color: #6d97c7;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #89b5da;
+}
+
+/* =============================
+   Footer
+============================= */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 40px;
+}
+
+/* =============================
+   Responsive Design
+============================= */
+@media (max-width: 768px) {
+  .hero-content, .about-container, .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin: 8px 0;
+  }
+}
